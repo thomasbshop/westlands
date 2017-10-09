@@ -1,0 +1,37 @@
+#heading{
+  background-color: #d4edf4;
+  height: 90px;
+  margin-bottom: 0px;
+}
+
+#navLinks{
+  margin-top: 40px;
+}
+
+aside{
+  background-color: #f9fbba;
+  margin-top: 70px;
+}
+
+section{
+  margin-top: 30px;
+  background-color: #e2f2d5;
+}
+
+#mainContainer{
+  background-color: #e2f2d5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.medBtns {
+
+}
+
+h2,h4,h5{
+  text-transform: uppercase;
+}
+
+ div>h5{
+   margin-left: 30px;
+ }
