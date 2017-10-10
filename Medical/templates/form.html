@@ -64,123 +64,184 @@
 
         <section class="col-sm-9 col-md-9">
           <!--The Actual Form-->
+          <form class="" action="index.html" method="post">
 
-          <div class="panel panel-default">
-            <form class="" action="index.html" method="post">
-                <!--FORM TABLE-->
-              <div class="row">
-                <div class="col-md-12">
-                  <table class="table table-striped hs-table">
-                            <thead>
-                                <tr>
-                                    <th class="col-md-1">#</th>
-                                    <th class="col-md-7">Item Description</th>
-                                    <th class="col-md-2">Data Format</th>
-                                    <th class="col-md-2">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+              <div class="panel-group">
 
-                                  <tr>
-                                          <td>1</td>
-                                          <td>
+                       <!--FORM TABLE-->
+                  <div class="panel panel-default">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                          <table class="table table-striped hs-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-md-1">#</th>
+                                            <th class="col-md-7">Item Description</th>
+                                            <th class="col-md-2">Data Format</th>
+                                            <th class="col-md-2">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                                                        <i class="fa fa-database hs-text-green" aria-hidden="true"></i>
+                                          <tr>
+                                                  <td>1</td>
+                                                  <td>
 
-                                                    &nbsp;Dicounted Bundle - NPI Database for All States
-                                          </td>
-                                          <td>
-                                                    <div style="display:flex">
-                                                      <select class="form-control" id="Format_NpiAllStates" name="Format_NpiAllStates">
+                                                                <i class="fa fa-database hs-text-green" aria-hidden="true"></i>
 
-                                                                  <option value="1">TSV</option>
-
-                                                                  <option value="2">MSSQL</option>
-
-                                                                  <option value="5">MySQL</option>
-
-                                                        </select>
-
-                                                    </div>
-                                          </td>
-                                          <td class="text-right">$289.75 </td>
-                                </tr>
-
-                                  <tr>
-                                                <td>2</td>
-                                                <td>
-
-                                                        <i class="fa fa-envelope hs-text-green" aria-hidden="true"></i>
-
-                                                    &nbsp;Regular updates for NPI All States Bundle
-                                                </td>
-                                                <td>
+                                                            &nbsp;Dicounted Bundle - NPI Database for All States
+                                                  </td>
+                                                  <td>
                                                             <div style="display:flex">
-                                                                <select class="form-control" id="dataFormatDropDown" name="dataFormatDropDown">
+                                                              <select class="form-control" id="Format_NpiAllStates" name="Format_NpiAllStates">
 
-                                                                            <option value="1">TSV</option>
+                                                                          <option value="1">TSV</option>
 
-                                                                            <option value="2">MSSQL</option>
+                                                                          <option value="2">MSSQL</option>
 
-                                                                            <option value="5">MySQL</option>
+                                                                          <option value="5">MySQL</option>
 
                                                                 </select>
 
                                                             </div>
-                                                            </td>
-                                                <td class="text-right">$29.85  / Month</td>
-                                            </tr>
+                                                  </td>
+                                                  <td class="text-right">$289.75 </td>
+                                        </tr>
 
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="3" class="text-right">TOTAL:</td>
-                                    <td>$319.70</td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                                          <tr>
+                                                        <td>2</td>
+                                                        <td>
 
-                </div>
+                                                                <i class="fa fa-envelope hs-text-green" aria-hidden="true"></i>
+
+                                                            &nbsp;Regular updates for NPI All States Bundle
+                                                        </td>
+                                                        <td>
+                                                                    <div style="display:flex">
+                                                                        <select class="form-control" id="dataFormatDropDown" name="dataFormatDropDown">
+
+                                                                                    <option value="1">TSV</option>
+
+                                                                                    <option value="2">MSSQL</option>
+
+                                                                                    <option value="5">MySQL</option>
+
+                                                                        </select>
+
+                                                                    </div>
+                                                                    </td>
+                                                        <td class="text-right">$29.85  / Month</td>
+                                                    </tr>
+
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3" class="text-right">TOTAL:</td>
+                                            <td>$319.70</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                        </div>
+                      </div>
+                  </div>
+
+                        <!--FORM FIELDSET-->
+                  <div class="panel panel-default">
+                      <div class="row">
+                        <div class="col-sm-9 col-md-9">
+
+                          <fieldset class="form-inline" id="couponForm">
+                            <div class="form-group">
+                              <label class="sr-only">Coupon</label>
+                              <p class="form-control-static"><strong>Discount coupon</strong></p>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputCoupon" class="sr-only">Discount coupon</label>
+                              <input type="text" class="form-control" id="inputCoupon" placeholder="Coupon">
+                            </div>
+                            <button type="button" class="btn btn-default">
+                              <span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="font-size: 16px;"></span>
+                            </button>
+                          </fieldset>
+
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+
+                          <button class="btn btn-success" type="button"><strong>Confirm and Submit</strong></button>
+
+                        </div>
+                  </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <fieldset id="billingInfo" class="form-horizontal" >
+                            <legend>Billing Information</legend>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">E-Mail *:</label>
+                                    <div class="col-sm-8">
+                                        <input name="billingEMail" type="text" id="billingEMail" class="form-control" style="width:100%;">
+                                        <small class="grayed">Please specify correct e-mail, it will be used for all notifications and to download the product</small>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">First Name *:</label>
+                                    <div class="col-sm-8"><input name="billingFirstName" type="text" id="billingFirstName" class="form-control" style="width:100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Last Name *:</label>
+                                    <div class="col-sm-8"><input name="billingLastName" type="text" id="billingLastName" class="form-control" style="width:100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Organization:</label>
+                                    <div class="col-sm-8"><input name="billingOrganization" type="text" id="billingOrganization" class="form-control" style="width:100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Address *:</label>
+                                    <div class="col-sm-8"><input name="billingAddress" type="text" id="billingAddress" class="form-control" style="width:100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">City *:</label>
+                                    <div class="col-sm-8"><input name="billingCity" type="text" id="billingCity" class="form-control" style="width:100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">State *:</label>
+                                    <div class="col-sm-3"><input name="billingState" type="text" id="billingState" class="form-control" style="width:100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Zip *:</label>
+                                    <div class="col-sm-3"><input name="billingZip" type="text" id="billingZip" class="form-control" style="width:100%;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Phone *:</label>
+                                    <div class="col-sm-5"><input name="billingPhone" type="text" id="billingPhone" class="form-control" style="width:100%;"></div>
+                                </div>
+                            </div>
+
+                          </fieldset>
+
+                        </div>
+
+                        <div class="col-md-6">
+                          <fieldset id="paymentInfo">
+                            <legend>Payment Information</legend>
+                            <small>Payments are secure and safe.</small>
+
+                          </fieldset>
+                          <fieldset id="confirmInfo">
+
+                          </fieldset>
+
+                        </div>
+
+                      </div>
+                  </div>
 
               </div>
-                <!--FORM FIELDSET-->
-              <div class="row">
-                <div class="col-md-9">
+          </form>
 
-                  <fieldset class="form-inline" id="couponForm">
-                    <div class="form-group">
-                      <label class="sr-only">Coupon</label>
-                      <p class="form-control-static"><strong>Discount coupon</strong></p>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputCoupon" class="sr-only">Discount coupon</label>
-                      <input type="text" class="form-control" id="inputCoupon" placeholder="Coupon">
-                    </div>
-                    <button type="button" class="btn btn-default">
-                      <span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="font-size: 16px;"></span>
-                    </button>
-                  </fieldset>
-
-                </div>
-                <div class="col-md-3">
-
-                  <button class="btn btn-success" type="button"><strong>Confirm and Submit</strong></button>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-
-                </div>
-                
-                <div class="col-md-6">
-
-                </div>
-
-              </div>
-            </form>
-
-          </div>
 
           <div class="alert alert-warning"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
             This is a warning alert.
