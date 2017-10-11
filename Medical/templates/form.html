@@ -53,7 +53,7 @@
     </header>
     <div id="mainContainer" class="container-fluid">
       <div class="row" style="margin-left: 50px; margin-right: 50px;">
-        <aside id="sidebar" class="col-sm-3 col-md-3">
+        <aside id="sidebar" class="col-sm-2 col-md-2">
           <ul>
             <li>Medical databases</li>
             <li>Requests</li>
@@ -62,7 +62,7 @@
           </ul>
         </aside>
 
-        <section class="col-sm-9 col-md-9">
+        <section class="col-sm-10 col-md-10">
           <!--The Actual Form-->
           <form class="" action="index.html" method="post">
 
@@ -73,7 +73,7 @@
                       <div class="row">
                         <div class="col-sm-12 col-md-12">
                           <table class="table table-striped hs-table">
-                                    <thead>
+                                <thead>
                                         <tr>
                                             <th class="col-md-1">#</th>
                                             <th class="col-md-7">Item Description</th>
@@ -81,19 +81,17 @@
                                             <th class="col-md-2">Price</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                <tbody>
 
-                                          <tr>
+                                        <tr>
                                                   <td>1</td>
                                                   <td>
-
-                                                                <i class="fa fa-database hs-text-green" aria-hidden="true"></i>
-
-                                                            &nbsp;Dicounted Bundle - NPI Database for All States
+                                                        <i class="fa fa-database hs-text-green" aria-hidden="true"></i>
+                                                        &nbsp;Dicounted Bundle - NPI Database for All States
                                                   </td>
                                                   <td>
-                                                            <div style="display:flex">
-                                                              <select class="form-control" id="Format_NpiAllStates" name="Format_NpiAllStates">
+                                                       <div style="display:flex">
+                                                         <select class="form-control" id="Format_NpiAllStates" name="Format_NpiAllStates">
 
                                                                           <option value="1">TSV</option>
 
@@ -103,21 +101,21 @@
 
                                                                 </select>
 
-                                                            </div>
+                                                       </div>
                                                   </td>
                                                   <td class="text-right">$289.75 </td>
                                         </tr>
 
-                                          <tr>
-                                                        <td>2</td>
-                                                        <td>
+                                        <tr>
+                                                  <td>2</td>
+                                                  <td>
 
                                                                 <i class="fa fa-envelope hs-text-green" aria-hidden="true"></i>
 
                                                             &nbsp;Regular updates for NPI All States Bundle
-                                                        </td>
-                                                        <td>
-                                                                    <div style="display:flex">
+                                                  </td>
+                                                  <td>
+                                                         <div style="display:flex">
                                                                         <select class="form-control" id="dataFormatDropDown" name="dataFormatDropDown">
 
                                                                                     <option value="1">TSV</option>
@@ -129,18 +127,18 @@
                                                                         </select>
 
                                                                     </div>
-                                                                    </td>
-                                                        <td class="text-right">$29.85  / Month</td>
-                                                    </tr>
+                                                  </td>
+                                                  <td class="text-right">$29.85  / Month</td>
+                                        </tr>
 
                                     </tbody>
-                                    <tfoot>
+                                <tfoot>
                                         <tr>
                                             <td colspan="3" class="text-right">TOTAL:</td>
-                                            <td>$319.70</td>
+                                            <td class="text-right">$319.70</td>
                                         </tr>
-                                    </tfoot>
-                                </table>
+                                </tfoot>
+                          </table>
                         </div>
                       </div>
                   </div>
@@ -170,7 +168,7 @@
                           <button class="btn btn-success" type="button"><strong>Confirm and Submit</strong></button>
 
                         </div>
-                  </div>
+                      </div>
                   </div>
                   <div class="panel panel-default">
                       <div class="row">
@@ -228,9 +226,24 @@
                           <fieldset id="paymentInfo">
                             <legend>Payment Information</legend>
                             <small>Payments are secure and safe.</small>
+                            <iframe src="#" width="430" height="270">
+                            </iframe>
 
                           </fieldset>
-                          <fieldset id="confirmInfo">
+                          <fieldset id="confirmInfo" style="margin-top: 30px;">
+                            <div class="">
+                              <div class="form-horizontal">
+                                <p>By clicking the <strong>Confirm</strong> button you agree to pay $$$ for the data and services
+                                   above and accept the <a href="#">Terms of Use.</a> </p>
+                                <p><strong>Note</strong>: please allow us up to 72 hours to process your request.
+                                </p>
+                                <div class="form-inline" id="formButtons">
+                                  <input class="btn btn-primary" type="submit" value="Confirm">
+                                  <button class="btn btn-default" type="reset">Cancel</button>
+
+                                </div>
+                              </div>
+                            </div>
 
                           </fieldset>
 
