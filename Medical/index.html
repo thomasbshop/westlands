@@ -39,7 +39,7 @@
                   </ul>
                 </nav> -->
         </button>
-        <a class="navbar-brand"href="index.html" style="font: 30px bold; margin-top: 15px;">HippaaSpaceData</a>
+        <a class="navbar-brand" href="index.html" style="font: 30px bold;line-height: 60px;">ThisIsTheLogo</a>
         <div class="navbar-collapse collapse">
           <ul id="navLinks" class="nav navbar-nav navbar-right ">
             <li><a href="index.html">Home</a></li>
@@ -51,19 +51,28 @@
       </div>
       <div class="clearfix"></div>
     </header>
-    <div id="mainContainer" class="container-fluid">
-      <div class="row" style="margin-left: 50px; margin-right: 50px;">
+    <div id="mainContainer" class="container">
+      <div class="row">
         <aside id="sidebar" class="col-sm-2 col-md-2">
-          <ul>
-            <li>Medical databases</li>
-            <li>Requests</li>
-            <li>EIN Companies</li>
-            <li>Codelists</li>
-          </ul>
+          <nav class="navbar navbar-default navbar-fixed-side">
+            <ul id="sidebarItems">
+              <li><a href="#">Medical databases</a></li>
+              <li><a href="#">Requests</a></li>
+              <li><a href="#">EIN Companies</a></li>
+              <li><a href="#">Codelists</a></li>
+            </ul>
+         </nav>
         </aside>
 
-        <section class="col-sm-10 col-md-10">
-          <div class="panel">
+        <section class="col-sm-10 col-md-10" style="padding-left:0px; padding-right:0px;">
+          <div class="">
+            <ul class="nav nav-tabs nav-justified">
+              <li role="presentation" class="active"><a href="#">Lookups</a></li>
+              <li role="presentation"><a href="#">SOAP/REST API</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </div>
+          <div class="panel panel-default">
               <div class="panel-heading">
                <h4>DATA</h4>
                <h2 class=""> Medical Data <small>Some other text.</small></h2>
@@ -173,7 +182,30 @@
                 </div>
               </div>
           </div>
-          <div class="panel">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+             <h4><strong>connect</strong></h4>
+             <h2 class=""> Requests <small>Some other text.</small></h2>
+             <small>available in various forms</small>
+            </div>
+            <div class="panel-body">
+                  <p>
+                   "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                    eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                    nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                    quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                  </p>
+                  <span style="margin-left:30px;">
+                    <button type="button" class="btn btn-primary" style="margin-right:10px; margin-top: 10px;">Learn</button>
+                    <button type="button" class="btn btn-default" style="margin-left:10px;margin-top:10px;">Subscribe</button>
+                  </span>
+                </div>
+          </div>
+          <div class="panel panel-default">
             <div class="panel-heading">
              <h4><strong>connect</strong></h4>
              <h2 class=""> Requests <small>Some other text.</small></h2>

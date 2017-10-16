@@ -39,7 +39,7 @@
                   </ul>
                 </nav> -->
         </button>
-        <a class="navbar-brand"href="index.html" style="font: 30px bold; margin-top: 15px;">HippaaSpaceData</a>
+        <a class="navbar-brand" href="index.html" style="font: 30px bold; line-height: 60px;">ThisIsTheLogo</a>
         <div class="navbar-collapse collapse">
           <ul id="navLinks" class="nav navbar-nav navbar-right ">
             <li><a href="index.html">Home</a></li>
@@ -64,15 +64,18 @@
 
         <section class="col-sm-10 col-md-10">
           <!--The Actual Form-->
-          <form class="" action="index.html" method="post">
+          <form class="container-fluid" action="index.html" method="post">
 
-              <div class="panel-group">
+            <div class="panel panel-info panel-group">
+              <div class="panel-heading">
+                <h3 class="panel-title">Order Check-out</h3>
+              </div>
 
                        <!--FORM TABLE-->
-                  <div class="panel panel-default">
-                      <div class="row">
-                        <div class="col-sm-12 col-md-12">
-                          <table class="table table-striped hs-table">
+                <!--  <div class="panel panel-default">
+                      <div class="row"> -->
+                        <div class="table-responsive">
+                          <table class="table table-hover table-striped">
                                 <thead>
                                         <tr>
                                             <th class="col-md-1">#</th>
@@ -80,7 +83,7 @@
                                             <th class="col-md-2">Data Format</th>
                                             <th class="col-md-2">Price</th>
                                         </tr>
-                                    </thead>
+                                </thead>
                                 <tbody>
 
                                         <tr>
@@ -91,7 +94,7 @@
                                                   </td>
                                                   <td>
                                                        <div style="display:flex">
-                                                         <select class="form-control" id="Format_NpiAllStates" name="Format_NpiAllStates">
+                                                         <select class="form-control" id="dataFormat" name="">
 
                                                                           <option value="1">TSV</option>
 
@@ -103,7 +106,7 @@
 
                                                        </div>
                                                   </td>
-                                                  <td class="text-right">$289.75 </td>
+                                                  <td>$289.75 </td>
                                         </tr>
 
                                         <tr>
@@ -128,27 +131,27 @@
 
                                                                     </div>
                                                   </td>
-                                                  <td class="text-right">$29.85  / Month</td>
+                                                  <td>$29.85  / Month</td>
                                         </tr>
 
                                     </tbody>
                                 <tfoot>
-                                        <tr>
+                                        <tr  class="success">
                                             <td colspan="3" class="text-right">TOTAL:</td>
-                                            <td class="text-right">$319.70</td>
+                                            <td>$319.70</td>
                                         </tr>
                                 </tfoot>
                           </table>
                         </div>
-                      </div>
-                  </div>
+                  <!--    </div>
+                  </div> -->
 
                         <!--FORM FIELDSET-->
-                  <div class="panel panel-default">
+                  <hr>
                       <div class="row">
                         <div class="col-sm-9 col-md-9">
 
-                          <fieldset class="form-inline" id="couponForm">
+                          <fieldset class="form-inline" id="couponForm" style="margin-left: 20px;">
                             <div class="form-group">
                               <label class="sr-only">Coupon</label>
                               <p class="form-control-static"><strong>Discount coupon</strong></p>
@@ -169,19 +172,20 @@
 
                         </div>
                       </div>
-                  </div>
-                  <div class="panel panel-default">
+                  <hr>
+
+                  <div >
                       <div class="row">
                         <div class="col-md-6">
                           <fieldset id="billingInfo" class="form-horizontal" >
-                            <legend>Billing Information</legend>
+                            <legend style="margin-left: 20px;">Billing Information</legend>
 
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">E-Mail *:</label>
                                     <div class="col-sm-8">
                                         <input name="billingEMail" type="text" id="billingEMail" class="form-control" style="width:100%;">
-                                        <small class="grayed">Please specify correct e-mail, it will be used for all notifications and to download the product</small>
+                                        <p style="margin-left:10px";> <small class="grayed">Please specify correct e-mail, it will be used for all notifications and to download the product</small></p>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -226,8 +230,10 @@
                           <fieldset id="paymentInfo">
                             <legend>Payment Information</legend>
                             <small>Payments are secure and safe.</small>
-                            <iframe src="#" width="430" height="270">
-                            </iframe>
+
+                          <!--  <div class="embed-responsive embed-responsive-16by9"> Elliminating border. -->
+                              <iframe src="#" width="430" height="270" class="embed-responsive-item"></iframe>
+                          <!--  </div> -->
 
                           </fieldset>
                           <fieldset id="confirmInfo" style="margin-top: 30px;">

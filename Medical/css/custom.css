@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 #heading{
   background-color: #d4edf4;
   height: 90px;
@@ -9,19 +14,62 @@
 }
 
 aside{
-  background-color: #f9fbba;
-  margin-top: 70px;
+  position: fixed;
+  top: 100px;
+  left: 0px
+  padding: 0 0 0 0;
+  /* background-color: #f9fbba; */
 }
 
-section{
-  margin-top: 30px;
-  background-color: #e2f2d5;
+aside ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+aside ul li{
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+  display: block;
+}
+
+aside ul li:hover{
+  background: #d4edf4;
+  transition: linear all 0.4s;
+}
+
+aside a{
+  text-decoration: none;
+  border-bottom: 1px;
+  padding: 0px 5px 0px 5px;
+}
+
+section {
+  padding: none;
 }
 
 #mainContainer{
   background-color: ;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+form{
+  margin: 0px 0px 0px 0px;
+}
+
+.panel-group{
+  margin: 0px 0px 0px 0px;
+}
+
+.panel{
+  border-radius: 0px;
+  border-top: 5px solid;
+  border-left: none;
+  border-right: none;
+}
+
+td,th {
+  text-align: center;
 }
 
 .medBtns {
