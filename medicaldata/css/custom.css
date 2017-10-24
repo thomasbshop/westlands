@@ -13,3 +13,7 @@ td{
     padding: 15px;
     margin: 0 auto;
 }
+
+.affix{   /*affix 1px from the top*/
+  top: 1px;
+}
